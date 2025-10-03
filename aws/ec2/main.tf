@@ -10,15 +10,13 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-east-2"
-  profile = "mateus-cli"
+  region  = var.aws_region
+  profile = var.aws_profile
 }
 
-resource "aws_instance" "example" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+resource "aws_instance" "server_web" {
+  ami           = var.instance_ami
+  instance_type = var.instance_type
 
-  tags = {
-    Name = "HelloWorld"
-  }
+  tags = var.instance_tags
 }
