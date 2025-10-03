@@ -2,18 +2,20 @@
 
 #### Principais comandos:
 
-- Iniciar terraform: `terraform init`
-- Verificar o plano de execução: `terraform plan`
-- Aplicar as mudanças: `terraform apply`
-- Destruir a infraestrutura: `terraform destroy`
+- `terraform init`: Iniciar terraform
+- `terraform plan`: Verificar o plano de execução
+- `terraform plan -out=tfplan`: Verificar o plano de execução e salvar em um arquivo para aplicação posterior
+- `terraform apply`: Aplicar as mudanças
+- `terraform destroy`: Destruir a infraestrutura
 
-#### Comandos CLI com flags (terraform plan / apply / destroy):
+#### Comandos CLI com flags:
 
-- `-var='key=value'` Define uma variável na linha de comando.
-- `TF_VAR_key=value` Define uma variável de ambiente para o Terraform.
-- `-var-file='file.tfvars'` Carrega variáveis de um arquivo específico.
-- `-out=tfplan` Salva o plano de execução em um arquivo para aplicação posterior.
-- `-auto-approve` Aplica mudanças sem solicitar confirmação (útil para scripts automatizados).
+Options: `plan`, `apply`, `destroy`
+
+- `terraform #option -var='key=value'`: Define uma variável na linha de comando.
+- `TF_VAR_key=value terraform #option`: Define uma variável de ambiente para o Terraform.
+- `terraform #option -var-file='file.tfvars'`: Carrega variáveis de um arquivo específico.
+- `terraform #option -auto-approve`: Aplica mudanças sem solicitar confirmação (útil para scripts automatizados).
 
 ## Ordem de execução das variáveis:
 
