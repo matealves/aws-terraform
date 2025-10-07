@@ -7,6 +7,7 @@ terraform.tfplan
 terraform.tfstate
 bin/
 modules-dev/
+hashicorp/
 /pkg/
 website/.vagrant
 website/.bundle

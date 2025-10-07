@@ -17,6 +17,14 @@ Options: `plan`, `apply`, `destroy`
 - `terraform #option -var-file='file.tfvars'`: Carrega variáveis de um arquivo específico.
 - `terraform #option -auto-approve`: Aplica mudanças sem solicitar confirmação (útil para scripts automatizados).
 
+#### Comandos auxiliares:
+
+- `terraform fmt`: Formatar o código
+- `terraform validate`: Validar a sintaxe do código
+- `terraform show`: Mostrar o estado atual
+- `terraform state list`: Listar os recursos no estado
+- `terraform console`: Abrir um console interativo para inspecionar o estado e expressões
+
 ## Ordem de execução das variáveis:
 
 1. Variáveis de ambiente
