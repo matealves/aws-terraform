@@ -11,8 +11,8 @@ terraform {
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs#environment-variables
 provider "aws" {
-  region  = "eu-central-1" # Recomendo a região us-east-1 se você estiver no Brasil
-  profile = "tf014"        # Usar este atributo somente se não for o profile "default" no arquivo ~/.aws/credentials
+  region  = "us-east-2"  # Recomendo a região us-east-1 se você estiver no Brasil
+  profile = "mateus-cli" # Usar este atributo somente se não for o profile "default" no arquivo ~/.aws/credentials
 }
 
 # terraform validate

@@ -10,8 +10,8 @@ terraform {
 }
 
 provider "aws" {
-  region  = "eu-central-1"
-  profile = "tf014"
+  region  = "us-east-2"
+  profile = "mateus-cli"
 }
 
 resource "random_pet" "this" {

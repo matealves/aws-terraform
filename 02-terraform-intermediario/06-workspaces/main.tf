@@ -19,7 +19,7 @@ terraform {
 
 provider "aws" {
   region  = lookup(var.aws_region, local.env)
-  profile = "tf014"
+  profile = "mateus-cli"
 }
 
 locals {
