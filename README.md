@@ -3,6 +3,7 @@
 #### Principais comandos:
 
 - `terraform init`: Iniciar terraform
+- `terraform validate`: Validar a configuração
 - `terraform plan`: Verificar o plano de execução
 - `terraform plan -out=tfplan`: Verificar o plano de execução e salvar em um arquivo para aplicação posterior
 - `terraform apply`: Aplicar as mudanças
